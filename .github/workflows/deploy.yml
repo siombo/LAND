@@ -1,7 +1,7 @@
-name: Deploy
+name: FARMLAND
 on:
   push:
-    branches: [main]
+    branches: [principal]  # ← Mudança aqui!
 permissions:
   pages: write
   id-token: write
