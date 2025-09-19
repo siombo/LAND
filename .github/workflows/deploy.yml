@@ -1,4 +1,26 @@
-name: Deploy to Pages
+name: Deploy Static Website
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build HTML (if necessary)
+        run: |
+          # Example: If you have a build process for your HTML
+          # npm install
+          # npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist # Or wherever your HTML files are locatedname: Deploy to Pages
 on:
   push:
     branches: [main]
