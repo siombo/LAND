@@ -1,7 +1,7 @@
 name: FARMLAND
 on:
   push:
-    branches: [principal]  # ← Mudança aqui!
+    branches: [main]  # ← Mudança aqui!
 permissions:
   pages: write
   id-token: write
