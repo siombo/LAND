@@ -1,4 +1,4 @@
-name: Deploy Static Website
+name: FARMLAND1.0 
 on:
   push:
     branches:
